@@ -1,19 +1,23 @@
-
+ 
 .von1 { grid-area: header;
-background-image: url('yaiba.jpg');
+background-image: url('original.jpg');
   background-repeat: no-repeat;
-} }
+background-size: 100% 100%;} 
+}
 .von2 { grid-area: main; }
-.von3 { grid-area: footer;
-background-image: url('yaiba.jpg');
-  background-repeat: no-repeat }
+.von4 { grid-area: right;background-image: url('pic1.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%; 
+} }
+.von3 { grid-area: footer;}
+.von5 { grid-area: underright;}
 
 .grid-container {
   display: grid;
   grid-template-areas:
     'header header header header header header'
-    'main main main main main main'
-    'footer footer footer footer footer footer';
+    'main main main main right right'
+    'footer footer footer footer underright underright';
   grid-gap: 2px;
   background-color: #ffffff;
   padding: 5px;
